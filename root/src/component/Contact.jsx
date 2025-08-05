@@ -13,7 +13,7 @@ function Contact() {
     const data = Object.fromEntries(formData.entries());
 
     try {
-     const res = await axios.post("http://localhost:5000/send", data);
+     const res = await axios.post("https://tester2-4h76.onrender.com", data);
 
       if (res.data.success) {
         toast.success("Email sent successfully!");
